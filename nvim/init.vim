@@ -58,6 +58,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " color schemas
 Plug 'morhetz/gruvbox'  " colorscheme gruvbox
@@ -77,15 +79,34 @@ Plug 'ray-x/lsp_signature.nvim'
 
 call plug#end()
 
+" Go syntax highlighting
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_operators = 1
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+
+" Auto formatting and importing
+let g:go_fmt_autosave = 1
+let g:go_fmt_command = "goimports"
+
+" Status line types/signatures
+let g:go_auto_type_info = 1
+au filetype go inoremap <buffer> . .<C-x><C-o>
+
+
 
 let g:airline_powerline_fonts = 1
 " let g:airline_theme='bubblegum'
 let g:airline_theme='onedark'
 
+
 let g:onedark_config = {
     \ 'style': 'warm',
 \}
-colorscheme onedark
+colorscheme nord
 
 if (has('termguicolors'))
   set termguicolors
@@ -97,7 +118,7 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- luasnip setup
 local luasnip = require 'luasnip'
--- local async = require "plenary.async"
+local async = require "plenary.async"
 
 -- nvim-cmp setup
 local cmp = require 'cmp'
