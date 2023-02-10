@@ -67,6 +67,7 @@ Plug 'mhartington/oceanic-next'  " colorscheme OceanicNext
 Plug 'navarasu/onedark.nvim'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'ayu-theme/ayu-vim'
+Plug 'sainnhe/everforest'
 Plug 'joshdick/onedark.vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'arcticicestudio/nord-vim'
@@ -103,10 +104,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='onedark'
 
 
-let g:onedark_config = {
-    \ 'style': 'warm',
-\}
-colorscheme nord
+colorscheme everforest
 
 if (has('termguicolors'))
   set termguicolors
