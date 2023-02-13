@@ -56,5 +56,9 @@
         "key": "shift+alt+up",
         "command": "-editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift shift",
+        "command": "workbench.action.quickOpen"
     }
 ]
