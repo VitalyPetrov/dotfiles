@@ -1,45 +1,46 @@
 {
+    // base editor settings
     "editor.fontSize": 15,
-    "editor.fontFamily": "SauceCodeProNerdFontCompleteM-Regular",
-    "editor.fontWeight": "normal",
+    "editor.fontFamily": "FiraCode-Retina",
+    "editor.renderWhitespace": "all",
+    "editor.bracketPairColorization.enabled": false,
     "editor.cursorStyle": "block-outline",
-    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "expand",
+    "editor.fontLigatures": "all",
+    "editor.lineHeight": 1.85,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 0.15,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "material-festoon",
+    // terminal
+    "terminal.integrated.fontSize": 15,
     "terminal.integrated.inheritEnv": false,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.explorerKind": "external",
-    "python.formatting.provider": "black",
-    "editor.formatOnSave": true,
-    "python.formatting.blackArgs": [
-        "-l 80"
-    ],
-    "jupyter.alwaysTrustNotebooks": true,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+    // python
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "python.formatting.blackPath": "black",
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
-    "jupyter.jupyterServerType": "remote",
-    "autoDocstring.docstringFormat": "numpy",
-    "python.linting.flake8Enabled": true,
-    "editor.renderWhitespace": "all",
-    "terminal.integrated.fontSize": 15,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "python.linting.flake8Path": "flake8",
-    "editor.smoothScrolling": true,
     "python.analysis.extraPaths": [
         "${workspaceFolder}"
     ],
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.cursorSmoothCaretAnimation": true,
-    "workbench.colorTheme": "material-rainbow",
-    "editor.bracketPairColorization.enabled": false,
-    "git.ignoreMissingGitWarning": true,
-    "editor.cursorBlinking": "smooth",
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "black",
+    "python.formatting.blackArgs": [
+        "-l 80"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "flake8",
+    "autoDocstring.docstringFormat": "numpy",
+    // dockerfile
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    // go
     "go.toolsManagement.autoUpdate": true,
     "emeraldwalk.runonsave": {
         "commands": [
@@ -49,11 +50,11 @@
             }
         ]
     },
-    "editor.lineHeight": 1.8,
-    "workbench.iconTheme": "material-icon-theme",
-    "material-icon-theme.folders.theme": "specific",
-    "[python]": {
-        "editor.formatOnType": true
-    },
+    // Misc
     "redhat.telemetry.enabled": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "security.workspace.trust.untrustedFiles": "open"
 }
