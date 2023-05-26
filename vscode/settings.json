@@ -1,7 +1,8 @@
 {
     // base editor settings
-    "editor.fontSize": 15,
-    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontSize": 14.5,
+    "editor.fontFamily": "FiraCode-Regular",
+    //"editor.fontFamily": "AnonymousPro",
     "editor.renderWhitespace": "all",
     "editor.bracketPairColorization.enabled": false,
     "editor.cursorStyle": "block-outline",
@@ -14,6 +15,7 @@
     "window.zoomLevel": 0.15,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "material-festoon",
+    "workbench.list.smoothScrolling": true,
     // terminal
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.inheritEnv": false,
@@ -22,7 +24,10 @@
     // python
     "[python]": {
         "editor.formatOnType": true,
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
     },
     "python.analysis.extraPaths": [
         "${workspaceFolder}"
@@ -56,5 +61,6 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "vim.vimrc.enable": true
 }
