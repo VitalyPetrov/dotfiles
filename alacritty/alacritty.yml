@@ -1,0 +1,65 @@
+env:
+  TERM: alacritty
+
+window:
+  startup_mode: Maximized
+  
+
+font:
+  normal:
+    family: Fira Code
+    style: Regular
+
+  bold:
+    family: Fira Code
+    style: Bold
+
+  italic:
+    family: Fira Code
+    style: Italic
+
+  bold_italic:
+    family: Fira Code
+    style: Bold Italic
+
+  size: 14.5
+  offset:
+    x: 1
+    y: 17
+
+draw_bold_text_with_bright_colors: true
+colors:
+  primary:
+    background: '#2e3034'
+    foreground: '#d8d8da'
+
+  normal:
+    black:   '#373636'
+    red:     '#f86e6d'
+    green:   '#7ae574'
+    yellow:  '#f6d25e'
+    blue:    '#64aae7'
+    magenta: '#b29afb'
+    cyan:    '#75d4d5'
+    white:   '#fefefe'
+
+  bright:
+    black:   '#8d8d8d'
+    red:     '#f86e6d'
+    green:   '#7ae574'
+    yellow:  '#f6d25e'
+    blue:    '#64aae7'
+    magenta: '#b29afb'
+    cyan:    '#75d4d5'
+    white:   '#fefefe'
+
+  dim:
+    black:   '#373636'
+    red:     '#f86e6d'
+    green:   '#7ae574'
+    yellow:  '#f6d25e'
+    blue:    '#64aae7'
+    magenta: '#b29afb'
+    cyan:    '#75d4d5'
+    white:   '#fefefe'
+
