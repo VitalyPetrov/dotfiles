@@ -3,7 +3,9 @@ env:
 
 window:
   startup_mode: Maximized
-  
+
+scrolling:
+  multiplier: 6
 
 font:
   normal:
@@ -62,4 +64,3 @@ colors:
     magenta: '#b29afb'
     cyan:    '#75d4d5'
     white:   '#fefefe'
-
