@@ -1,8 +1,9 @@
 {
     // base editor settings
     "editor.fontSize": 14.5,
-    "editor.fontFamily": "FiraCode-Regular",
-    //"editor.fontFamily": "AnonymousPro",
+    //"editor.fontFamily": "FiraCode-Regular",
+    "editor.fontFamily": "FiraMonoNFM-Regular",
+    //"editor.fontFamily": "JetBrainsMonoNFM-Regular",
     "editor.renderWhitespace": "all",
     "editor.bracketPairColorization.enabled": false,
     "editor.cursorStyle": "block-outline",
@@ -12,7 +13,7 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.smoothScrolling": true,
     "editor.formatOnSave": true,
-    "window.zoomLevel": 0.15,
+    "window.zoomLevel": 0.25,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "material-festoon",
     "workbench.list.smoothScrolling": true,
@@ -24,6 +25,7 @@
     // python
     "[python]": {
         "editor.formatOnType": true,
+        "editor.formatOnSave": true,
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
@@ -32,14 +34,6 @@
     "python.analysis.extraPaths": [
         "${workspaceFolder}"
     ],
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "black",
-    "python.formatting.blackArgs": [
-        "-l 80"
-    ],
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "flake8",
     "autoDocstring.docstringFormat": "numpy",
     // dockerfile
     "[dockerfile]": {
@@ -62,5 +56,5 @@
         "jupyter-notebook": "left"
     },
     "security.workspace.trust.untrustedFiles": "open",
-    "vim.vimrc.enable": true
+    "everforest.darkContrast": "hard"
 }
