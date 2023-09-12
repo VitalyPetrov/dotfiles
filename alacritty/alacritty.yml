@@ -3,31 +3,32 @@ env:
 
 window:
   startup_mode: Maximized
+  title: alacritty
 
 scrolling:
   multiplier: 6
 
 font:
   normal:
-    family: Fira Code
-    style: Regular
+    family: JetBrainsMono Nerd Font Mono
+    style: Light
 
   bold:
-    family: Fira Code
+    family: JetBrainsMono Nerd Font Mono
     style: Bold
 
   italic:
-    family: Fira Code
+    family: JetBrainsMono Nerd Font Mono
     style: Italic
 
   bold_italic:
-    family: Fira Code
+    family: JetBrainsMono Nerd Font Mono
     style: Bold Italic
 
   size: 14.5
   offset:
     x: 1
-    y: 17
+    y: 19
 
 draw_bold_text_with_bright_colors: true
 colors:
