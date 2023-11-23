@@ -68,9 +68,16 @@ Plug 'navarasu/onedark.nvim'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'ayu-theme/ayu-vim'
 Plug 'sainnhe/everforest'
+Plug 'sainnhe/gruvbox-material'
 Plug 'joshdick/onedark.vim'
+Plug 'olivercederborg/poimandres.nvim'
+Plug 'chriskempson/base16-vim'
+Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'arcticicestudio/nord-vim'
+Plug 'sainnhe/sonokai'
+
+
 
 " Bottom bar
 Plug 'vim-airline/vim-airline'
