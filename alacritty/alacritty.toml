@@ -1,0 +1,49 @@
+]
+program = "zsh"
+
+[cursor]
+style = "Block"
+
+[font]
+size = 14.5
+
+[font.offset]
+x = 1
+y = 21
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Light"
+
+[window]
+startup_mode = "Maximized"
+title = ""
+dynamic_padding = true
+opacity = 1.0
+
+[window.padding]
+x = 6
+y = 0
+
+[window.dimensions]
+columns = 195
+lines = 35
+
+
+[colors.normal]
+black = "#8d8d8d"
+red = "#f86e6d"
+green = "#7ae574"
+yellow = "#f6d25e"
+blue = "#64aae7"
+magenta = "#b29afb"
+cyan = "#75d4d5"
+white = "#fefefe"
+
+[colors.primary]
+background = "#2d2d2d"
+foreground = "#d8d8de"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
