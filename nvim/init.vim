@@ -114,8 +114,11 @@ let g:sonokai_better_performance = 1
 let g:edge_style='default'
 let g:edge_better_performance = 1
 
-let g:airline_theme='bubblegum'
-colorscheme base16-eighties
+" let g:airline_theme='bubblegum'
+" colorscheme base16-eighties
+
+let g:airline_theme='edge'
+colorscheme edge
 
 lua << EOF
 -- Set up nvim-cmp.
