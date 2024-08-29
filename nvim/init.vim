@@ -5,51 +5,37 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set softtabstop=4
-set backspace=indent,eol,start
 set expandtab
+
+set cursorline
+set backspace=indent,eol,start
 set autoindent
-
-" Подсвечиваем все что можно подсвечивать в python
-let python_highlight_all = 1
-
-" Включаем 256 цветов в терминале
-" Нужно во многих терминалах, например в gnome-terminal
-set t_Co=256
-" set termguicolors
-" Перед сохранением вырезаем пробелы на концах (только в .py файлах)
-autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
-" В .py файлах включаем умные отступы после ключевых слов
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-
-
-" Спрятать курсор мыши когда набираем текст
-set mousehide
-
-" Включить поддержку мыши
+set ignorecase
+set fileformat=unix
 set mouse=a
-
-" Кодировка терминала
+set mousehide
 set termencoding=utf-8
 
-" Удобное поведение backspace
+set t_Co=256
+if has('termguicolors')
+    set termguicolors
+endif
+
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 
-" Вырубаем черточки на табах
-set showtabline=1
-
-" Переносим на другую строчку, разрываем строки
 set wrap
 set linebreak
 
-" Вырубаем .swp и ~ (резервные) файлы
 set nobackup
 set noswapfile
-set encoding=utf-8 " Кодировка файлов по умолчанию
+set encoding=utf-8
 set fileencodings=utf8,cp1251
 
 set clipboard=unnamed
 set ruler
 set hidden
+
+autocmd FileType python set colorcolumn=88
 
 call plug#begin('~/.vim/plugged')
 
@@ -82,6 +68,7 @@ Plug 'ray-x/lsp_signature.nvim'
 
 call plug#end()
 
+
 " Go syntax highlighting
 let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
@@ -107,18 +94,16 @@ let g:everforest_background='hard'
 let g:everforest_better_performance = 1
 " let g:airline_theme = 'everforest'
 
-let g:sonokai_style='default'
+let g:sonokai_style='atlantis'
 let g:sonokai_better_performance = 1
 " let g:airline_theme = 'sonokai'
 
 let g:edge_style='default'
 let g:edge_better_performance = 1
 
-" let g:airline_theme='bubblegum'
-" colorscheme base16-eighties
-
 let g:airline_theme='edge'
 colorscheme edge
+
 
 lua << EOF
 -- Set up nvim-cmp.
