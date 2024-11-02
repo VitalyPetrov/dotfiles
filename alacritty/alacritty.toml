@@ -31,11 +31,11 @@ lines = 35
 
 
 [colors.normal]
-black = "#8d8d8d"
+black = "#8d8d88"
 red = "#f86e6d"
 green = "#64e780"
 yellow = "#f6d25e"
-blue = "#64aae7"
+blue = "#5f9dfa"
 magenta = "#b29afb"
 cyan = "#75d4d5"
 white = "#fefefe"
@@ -43,6 +43,8 @@ white = "#fefefe"
 [colors.primary]
 background = "#2d2d2d"
 foreground = "#d8d8de"
+
+
 
 [colors.cursor]
 text = "CellBackground"
