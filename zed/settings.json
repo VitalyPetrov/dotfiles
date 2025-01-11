@@ -1,0 +1,53 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "ui_font_size": 18,
+    // buffer = ordinary text editor
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_size": 15,
+    "buffer_line_height": { "custom": 2.0 },
+    "buffer_font_weight": 400,
+    //
+    "cursor_blink": false,
+    "cursor_shape": "hollow",
+    "tabs": {
+        "close_position": "right",
+        "file_icons": true,
+        "git_status": true
+    },
+    "toolbar": {
+        "breadcrumbs": false,
+        "quick_actions": false
+    },
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Nord"
+    },
+    "languages": {
+        "Python": {
+            "format_on_save": {
+                "external": {
+                    "command": "ruff",
+                    "arguments": ["check", "--fix"]
+                }
+            }
+        },
+        "JSON": {
+            "tab_size": 4
+        },
+        "JSONC": {
+            "tab_size": 4
+        }
+    }
+}
