@@ -18,5 +18,23 @@
         "bindings": {
             "cmd-b": "editor::GoToDefinition"
         }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "cmd-1": "editor::Rename"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "cmd-escape": "editor::FindAllReferences"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "cmd-y": "editor::DeleteLine"
+        }
     }
 ]
